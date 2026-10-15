@@ -3,120 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#f4f6fb">
-<title>Portal Operasional PTJ BDB1</title>
+<meta name="theme-color" content="#f4f7fb">
+<title>Portal Operasional BDB1 | PT Putra Timur Jaya</title>
 <style>
-:root{--ink:#101828;--muted:#667085;--line:rgba(16,24,40,.10);--shadow:0 18px 45px rgba(31,41,55,.10)}
+:root{--navy:#14213a;--blue:#1766c2;--muted:#69758b;--line:#dfe5ee;--white:#fff}
 *{box-sizing:border-box}
-body{margin:0;min-height:100vh;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background-color:#f6f7fa;background-image:radial-gradient(rgba(109,119,137,.19) 1px,transparent 1px),linear-gradient(135deg,rgba(255,255,255,.8),rgba(235,239,246,.65));background-size:22px 22px,100% 100%;overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(135deg,transparent 0 28%,rgba(160,169,182,.08) 28% 29%,transparent 29% 56%,rgba(160,169,182,.08) 56% 57%,transparent 57%);z-index:-1}
-.wrap{width:min(1180px,calc(100% - 34px));margin:auto;padding:36px 0 28px}
-header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:36px}
-.brand{display:flex;align-items:center;gap:13px}
-.brand-mark{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(140deg,#111936,#285c9f);color:#fff;font-weight:900;letter-spacing:-1px;box-shadow:0 8px 20px #203a6833}
-.eyebrow{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#4774a9}
-h1{font-size:clamp(22px,3vw,31px);letter-spacing:-.045em;margin:3px 0}
-.subtitle{font-size:13px;color:var(--muted);margin:0}
-.header-tag{border:1px solid var(--line);background:#ffffffb8;padding:10px 14px;border-radius:999px;color:#526176;font-size:12px;font-weight:700;white-space:nowrap}
-.intro{text-align:center;margin:34px 0 29px}
-.intro h2{font-size:clamp(25px,4vw,38px);letter-spacing:-.05em;margin:0 0 9px}
-.intro p{margin:0;color:var(--muted);font-size:14px;line-height:1.7}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(15px,3vw,34px);align-items:start}
-.app{color:inherit;text-decoration:none;text-align:center;display:flex;flex-direction:column;align-items:center;min-width:0;outline-offset:6px}
-.tile{width:min(100%,290px);aspect-ratio:1/0.88;border:2px solid rgba(78,91,110,.13);border-radius:18px;background:rgba(255,255,255,.56);display:grid;place-items:center;padding:16px;position:relative;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
-.tile:after{content:"";position:absolute;inset:10px;border:1px solid rgba(255,255,255,.8);border-radius:12px;pointer-events:none}
-.app:hover .tile,.app:focus-visible .tile{transform:translateY(-5px);border-color:rgba(44,113,202,.45);box-shadow:var(--shadow);background:#fff}
-.art{width:100%;height:100%;max-height:190px;border-radius:13px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:0 10px 24px rgba(21,32,55,.12)}
-.art svg{width:78%;height:78%;max-width:175px;max-height:175px}
-.art.alker{background:linear-gradient(145deg,#0f2b46,#157f98)}
-.art.putija{background:linear-gradient(145deg,#0e183a,#254e85)}
-.art.absen{background:linear-gradient(145deg,#f5a13d,#d95b36)}
-.art:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.08);top:-90px;right:-65px}
-.art:after{content:"";position:absolute;width:130px;height:130px;border:1px solid rgba(255,255,255,.15);transform:rotate(35deg);bottom:-80px;left:-20px}
-.app-name{font-size:16px;font-weight:900;letter-spacing:.01em;margin-top:13px;text-shadow:0 1px 0 #fff}
-.app-desc{max-width:260px;color:var(--muted);font-size:12px;line-height:1.5;margin-top:6px}
-.launch{display:inline-flex;align-items:center;gap:7px;color:#2868ad;font-weight:800;font-size:12px;margin-top:10px}
-.launch span{font-size:17px;transition:transform .2s}
-.app:hover .launch span{transform:translateX(4px)}
-footer{text-align:center;color:#8a94a4;font-size:11px;padding:40px 0 0}
-@media(max-width:680px){.wrap{padding-top:23px}.header-tag{display:none}.intro{margin:27px 0 22px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:23px 13px}.tile{padding:10px;border-radius:15px}.app-name{font-size:13px}.app-desc{font-size:11px}.art{border-radius:10px}}
-@media(max-width:390px){.grid{grid-template-columns:1fr 1fr}.tile{width:100%;aspect-ratio:1/1}.brand-mark{width:42px;height:42px}.subtitle{font-size:11px}}
+body{margin:0;min-height:100vh;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--navy);background-color:#f5f7fb;background-image:radial-gradient(#d9e1ed .8px,transparent .8px),linear-gradient(135deg,transparent 0 35%,rgba(217,225,237,.25) 35% 36%,transparent 36% 68%,rgba(217,225,237,.2) 68% 69%,transparent 69%);background-size:16px 16px,100% 100%;padding:22px}
+.wrap{max-width:1180px;margin:auto}
+header{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:0 0 32px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-logo{width:54px;height:54px;object-fit:contain;flex-shrink:0;filter:drop-shadow(0 5px 8px #15233a20)}
+.eyebrow{font-size:10px;letter-spacing:2px;font-weight:800;color:#2765ad;margin-bottom:3px}
+h1{font-size:clamp(21px,3vw,30px);letter-spacing:-1.2px;line-height:1.15;margin:0;font-weight:850}
+.subtitle{font-size:12px;color:var(--muted);margin-top:5px}
+.pill{border:1px solid var(--line);background:#ffffffc9;padding:9px 13px;border-radius:30px;font-size:10px;font-weight:800;color:#53617a;white-space:nowrap}
+.intro{text-align:center;margin:30px auto 27px}
+.intro h2{font-size:clamp(25px,3vw,34px);letter-spacing:-1.3px;margin:0 0 8px}
+.intro p{margin:0;color:var(--muted);font-size:12px;line-height:1.8}
+.apps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;max-width:1020px;margin:0 auto}
+.app{display:flex;flex-direction:column;align-items:center;text-decoration:none;color:inherit;padding:12px 12px 16px;border:1px solid #e0e5ed;border-radius:17px;background:#ffffff9c;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;min-width:0}
+.app:hover,.app:focus-visible{transform:translateY(-4px);box-shadow:0 14px 35px #23365316;border-color:#b8cbe2;outline:none}
+.app-art{width:100%;max-width:270px;aspect-ratio:1/1;border-radius:14px;display:grid;place-items:center;overflow:hidden;background:#fff;box-shadow:0 5px 15px #1c2d4212}
+.app-art img{width:100%;height:100%;object-fit:contain;display:block}
+.app h3{font-size:14px;font-weight:850;margin:14px 0 5px;text-align:center}
+.app p{font-size:10px;line-height:1.6;text-align:center;color:var(--muted);margin:0;min-height:32px;max-width:240px}
+.open{font-size:10px;font-weight:800;color:var(--blue);margin-top:9px}
+.open span{font-size:14px;margin-left:4px}
+footer{text-align:center;color:#8b96a8;font-size:10px;margin:36px 0 4px}
+@media(max-width:720px){body{padding:16px}.apps{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.app{padding:9px}.app h3{font-size:12px}.app p{font-size:10px}.pill{display:none}.intro{margin-top:25px}}
+@media(max-width:430px){.apps{grid-template-columns:1fr;max-width:300px}.app-art{max-width:230px}.app p{min-height:unset}.app{padding:12px}}
 </style>
 </head>
 <body>
-<main class="wrap">
-  <header>
-    <div class="brand">
-      <div class="brand-mark">PTJ</div>
-      <div>
-        <div class="eyebrow">PT Putra Timur Jaya</div>
-        <h1>Portal Operasional BDB1</h1>
-        <p class="subtitle">Satu link untuk seluruh aplikasi kerja</p>
-      </div>
+<div class="wrap">
+<header>
+  <div class="brand">
+    <img class="brand-logo" src="images/logo-portal.png" alt="Logo Portal Operasional BDB1">
+    <div>
+      <div class="eyebrow">PT PUTRA TIMUR JAYA</div>
+      <h1>Portal Operasional BDB1</h1>
+      <div class="subtitle">Satu link untuk seluruh aplikasi kerja</div>
     </div>
-    <div class="header-tag">● PORTAL APLIKASI</div>
-  </header>
-
+  </div>
+  <div class="pill">● PORTAL APLIKASI</div>
+</header>
+<main>
   <section class="intro">
     <h2>Pilih Aplikasi</h2>
-    <p>Pilih ICON Web Yang di Butuhkan.<br>Khusus Pegawai Putija Bandung Barat 1.</p>
+    <p>Klik ikon aplikasi di bawah untuk membuka website yang dibutuhkan.<br>Praktis, rapi, dan bisa digunakan dari HP maupun komputer.</p>
   </section>
-
-  <section class="grid" aria-label="Menu aplikasi">
+  <section class="apps" aria-label="Daftar aplikasi">
     <a class="app" href="https://putijabdb1-create.github.io/alker-control/" target="_blank" rel="noopener noreferrer">
-      <div class="tile">
-        <div class="art alker" aria-hidden="true">
-          <svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M90 20 143 40V83c0 34-22 59-53 75C59 142 37 117 37 83V40L90 20Z" fill="#E8F5FF" fill-opacity=".12" stroke="#D8F0FF" stroke-width="4"/>
-            <path d="M90 31 132 47V82c0 26-16 46-42 61C64 128 48 108 48 82V47L90 31Z" stroke="#62D9E9" stroke-width="3"/>
-            <path d="M66 78 82 94 113 62" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M65 111H115" stroke="#9BE8F2" stroke-width="5" stroke-linecap="round"/>
-          </svg>
-        </div>
-      </div>
-      <div class="app-name">ALKER CONTROL</div>
-      <div class="app-desc">Inventaris alker, data teknisi, dan validasi gudang.</div>
-      <div class="launch">Buka aplikasi <span>→</span></div>
+      <div class="app-art"><img src="images/logo-alker.png" alt="Logo ALKER Teknisi Putija"></div>
+      <h3>ALKER CONTROL</h3>
+      <p>Inventaris alker, data teknisi, dan validasi gudang.</p>
+      <div class="open">Buka aplikasi <span>→</span></div>
     </a>
-
     <a class="app" href="https://putijabdb1-create.github.io/putijabandung/index.html" target="_blank" rel="noopener noreferrer">
-      <div class="tile">
-        <div class="art putija" aria-hidden="true">
-          <svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M90 19 105 35 128 31 136 52 157 62 151 85 160 104 143 120 139 143 115 145 90 162 68 145 43 143 39 120 20 104 29 84 23 62 44 52 52 31 75 35 90 19Z" fill="#FFFFFF" fill-opacity=".12" stroke="#B9D9FF" stroke-width="3"/>
-            <path d="M57 117V82L90 59 123 82V117" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round"/>
-            <path d="M73 117V94H107V117" stroke="#77D7E7" stroke-width="6" stroke-linejoin="round"/>
-            <path d="M48 83 90 53 132 83" stroke="#77D7E7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="90" cy="37" r="5" fill="#F6C76B"/>
-          </svg>
-        </div>
-      </div>
-      <div class="app-name">PUTIJA BANDUNG</div>
-      <div class="app-desc">Akses aplikasi dan informasi operasional Bandung.</div>
-      <div class="launch">Buka aplikasi <span>→</span></div>
+      <div class="app-art"><img src="images/logo-putija.png" alt="Logo Putija Bandung Biodata"></div>
+      <h3>PUTIJA BANDUNG</h3>
+      <p>Akses aplikasi dan informasi operasional Bandung.</p>
+      <div class="open">Buka aplikasi <span>→</span></div>
     </a>
-
     <a class="app" href="https://putijabdb1-create.github.io/Absen-ptptjbdb1/" target="_blank" rel="noopener noreferrer">
-      <div class="tile">
-        <div class="art absen" aria-hidden="true">
-          <svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="48" y="24" width="84" height="132" rx="14" fill="#FFFFFF" fill-opacity=".95"/>
-            <rect x="58" y="39" width="64" height="91" rx="7" fill="#FFF0E2"/>
-            <circle cx="90" cy="67" r="13" fill="#E17A35"/>
-            <path d="M67 103C70 89 80 84 90 84C100 84 110 89 113 103" fill="#E17A35"/>
-            <path d="M72 116 84 127 108 102" stroke="#247C61" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-            <rect x="79" y="143" width="22" height="4" rx="2" fill="#D1D5DB"/>
-          </svg>
-        </div>
-      </div>
-      <div class="app-name">ABSENSI PTJ BDB1</div>
-      <div class="app-desc">Absensi teknisi dan pencatatan kehadiran harian.</div>
-      <div class="launch">Buka aplikasi <span>→</span></div>
+      <div class="app-art"><img src="images/logo-absensi.png" alt="Logo Absensi Putija Bandung"></div>
+      <h3>ABSENSI PTJ BDB1</h3>
+      <p>Absensi teknisi dan pencatatan kehadiran harian.</p>
+      <div class="open">Buka aplikasi <span>→</span></div>
     </a>
   </section>
-  
-
-  <footer>PORTAL OPERASIONAL • PT PUTRA TIMUR JAYA • BDB1</footer>
 </main>
+<footer>PORTAL OPERASIONAL • PT PUTRA TIMUR JAYA • BDB1</footer>
+</div>
 </body>
 </html>
