@@ -6,13 +6,13 @@
 <meta name="theme-color" content="#f4f7fb">
 <title>Portal Operasional BDB1 | PT Putra Timur Jaya</title>
 <style>
-:root{--navy:#14213a;--blue:#1766c2;--muted:#69758b;--line:#dfe5ee;--white:#fff}
+:root{--navy:#14213a;--blue:#1766c2;--muted:#69758b;--line:#dfe5ee}
 *{box-sizing:border-box}
 body{margin:0;min-height:100vh;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--navy);background-color:#f5f7fb;background-image:radial-gradient(#d9e1ed .8px,transparent .8px),linear-gradient(135deg,transparent 0 35%,rgba(217,225,237,.25) 35% 36%,transparent 36% 68%,rgba(217,225,237,.2) 68% 69%,transparent 69%);background-size:16px 16px,100% 100%;padding:22px}
 .wrap{max-width:1180px;margin:auto}
 header{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:0 0 32px}
 .brand{display:flex;align-items:center;gap:12px;min-width:0}
-.brand-logo{width:54px;height:54px;object-fit:contain;flex-shrink:0;filter:drop-shadow(0 5px 8px #15233a20)}
+.brand-logo{width:62px;height:62px;object-fit:cover;border-radius:50%;flex-shrink:0;filter:drop-shadow(0 5px 8px #15233a20)}
 .eyebrow{font-size:10px;letter-spacing:2px;font-weight:800;color:#2765ad;margin-bottom:3px}
 h1{font-size:clamp(21px,3vw,30px);letter-spacing:-1.2px;line-height:1.15;margin:0;font-weight:850}
 .subtitle{font-size:12px;color:var(--muted);margin-top:5px}
@@ -20,18 +20,18 @@ h1{font-size:clamp(21px,3vw,30px);letter-spacing:-1.2px;line-height:1.15;margin:
 .intro{text-align:center;margin:30px auto 27px}
 .intro h2{font-size:clamp(25px,3vw,34px);letter-spacing:-1.3px;margin:0 0 8px}
 .intro p{margin:0;color:var(--muted);font-size:12px;line-height:1.8}
-.apps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;max-width:1020px;margin:0 auto}
-.app{display:flex;flex-direction:column;align-items:center;text-decoration:none;color:inherit;padding:12px 12px 16px;border:1px solid #e0e5ed;border-radius:17px;background:#ffffff9c;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;min-width:0}
+.apps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:1050px;margin:0 auto}
+.app{display:flex;flex-direction:column;align-items:center;text-decoration:none;color:inherit;padding:16px 14px 18px;border:1px solid #e0e5ed;border-radius:20px;background:#ffffffb8;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;min-width:0}
 .app:hover,.app:focus-visible{transform:translateY(-4px);box-shadow:0 14px 35px #23365316;border-color:#b8cbe2;outline:none}
-.app-art{width:100%;max-width:270px;aspect-ratio:1/1;border-radius:14px;display:grid;place-items:center;overflow:hidden;background:#fff;box-shadow:0 5px 15px #1c2d4212}
-.app-art img{width:100%;height:100%;object-fit:contain;display:block}
+.app-art{width:min(100%,220px);aspect-ratio:1/1;border-radius:50%;display:grid;place-items:center;overflow:hidden;background:#fff;box-shadow:0 7px 20px #1c2d4218;border:1px solid #edf0f5}
+.app-art img{width:100%;height:100%;object-fit:contain;display:block;border-radius:50%}
 .app h3{font-size:14px;font-weight:850;margin:14px 0 5px;text-align:center}
-.app p{font-size:10px;line-height:1.6;text-align:center;color:var(--muted);margin:0;min-height:32px;max-width:240px}
-.open{font-size:10px;font-weight:800;color:var(--blue);margin-top:9px}
+.app p{font-size:11px;line-height:1.6;text-align:center;color:var(--muted);margin:0;min-height:35px;max-width:240px}
+.open{font-size:11px;font-weight:800;color:var(--blue);margin-top:9px}
 .open span{font-size:14px;margin-left:4px}
 footer{text-align:center;color:#8b96a8;font-size:10px;margin:36px 0 4px}
-@media(max-width:720px){body{padding:16px}.apps{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.app{padding:9px}.app h3{font-size:12px}.app p{font-size:10px}.pill{display:none}.intro{margin-top:25px}}
-@media(max-width:430px){.apps{grid-template-columns:1fr;max-width:300px}.app-art{max-width:230px}.app p{min-height:unset}.app{padding:12px}}
+@media(max-width:760px){body{padding:16px}.apps{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.app{padding:12px 9px 14px}.app h3{font-size:12px}.app p{font-size:10px}.pill{display:none}.intro{margin-top:25px}.app-art{width:min(100%,190px)}}
+@media(max-width:440px){.apps{grid-template-columns:1fr;max-width:310px}.app-art{width:min(100%,220px)}.app p{min-height:unset}.app{padding:14px}}
 </style>
 </head>
 <body>
@@ -50,7 +50,7 @@ footer{text-align:center;color:#8b96a8;font-size:10px;margin:36px 0 4px}
 <main>
   <section class="intro">
     <h2>Pilih Aplikasi</h2>
-    <p>Pilih website yang di perlukan untuk LOGIN dengan user yang sama .<br>Khusus Karyawan Putija Bandung Barat1.</p>
+    <p>Pilih website yang diperlukan untuk LOGIN dengan user yang sama.<br>Khusus Karyawan Putija Bandung Barat 1.</p>
   </section>
   <section class="apps" aria-label="Daftar aplikasi">
     <a class="app" href="https://putijabdb1-create.github.io/alker-control/" target="_blank" rel="noopener noreferrer">
@@ -69,6 +69,12 @@ footer{text-align:center;color:#8b96a8;font-size:10px;margin:36px 0 4px}
       <div class="app-art"><img src="logo-absensi.png" alt="Logo Absensi Putija Bandung"></div>
       <h3>ABSENSI PTJ BDB1</h3>
       <p>Absensi teknisi dan pencatatan kehadiran harian.</p>
+      <div class="open">Buka aplikasi <span>→</span></div>
+    </a>
+    <a class="app" href="https://putijabdb1-create.github.io/monitoring-teknisi/login.html" target="_blank" rel="noopener noreferrer">
+      <div class="app-art"><img src="logo-monitoring.png" alt="Logo Monitoring Teknisi Putija Bandung"></div>
+      <h3>MONITORING TEKNISI</h3>
+      <p>Monitoring aktivitas dan informasi teknisi Putija Bandung.</p>
       <div class="open">Buka aplikasi <span>→</span></div>
     </a>
   </section>
